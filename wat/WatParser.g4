@@ -45,7 +45,7 @@ value
 /* Auxiliaries */
 
 name
-    : STRING_
+    : IdentifierString
     ;
 
 /* Types */
