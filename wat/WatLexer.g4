@@ -254,6 +254,10 @@ fragment String_:
     '"' (Char | '\n' | '\t' | '\\' | '\'' | '\\' HexDigit HexDigit | '\\u{' HexDigit+ '}')* '"'
 ;
 
+fragment IdentifierString:
+    '"' (Char | '\\' | '\'' | '\\' HexDigit HexDigit | '\\u{' HexDigit+ '}')* '"'
+;
+
 fragment Name: '$' (Letter | Digit | '_' | Symbol)+;
 
 fragment Escape: [nrt'"\\];
