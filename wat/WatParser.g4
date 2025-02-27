@@ -214,7 +214,7 @@ func_
 
 func_fields
     : type_use? func_fields_body
-    | inline_import type_use? func_fields_import
+    // | inline_import type_use? func_fields_import
     | inline_export func_fields
     ;
 
@@ -255,7 +255,7 @@ table
 
 table_fields
     : table_type
-    | inline_import table_type
+    // | inline_import table_type
     | inline_export table_fields
     | elem_type LPAR ELEM var_* RPAR
     ;
@@ -270,7 +270,7 @@ memory
 
 memory_fields
     : memory_type
-    | inline_import memory_type
+    // | inline_import memory_type
     | inline_export memory_fields
     | LPAR DATA STRING_* RPAR
     ;
@@ -281,7 +281,7 @@ sglobal
 
 global_fields
     : global_type const_expr
-    | inline_import global_type
+    // | inline_import global_type
     | inline_export global_fields
     ;
 
@@ -341,7 +341,7 @@ module_field
     | elem
     | data
     | start_
-    | simport
+    // | simport
     | export_
     ;
 
